@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom';
 
 /** Components */
 import Navbar from './containers/navbar/Navbar';
+import Home from './containers/home/Home';
 
 
 /** Styles */
@@ -45,6 +46,7 @@ class Wrapper extends React.Component {
     return (
       <div>
         <Navbar />
+        <Home />
       </div>
     )
   }
