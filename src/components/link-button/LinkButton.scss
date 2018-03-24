@@ -1,0 +1,30 @@
+.linkBtn{
+  outline: none;
+  display: inline-block;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  padding: 3px 12px 3px 12px;
+  // max-width: 100%;
+  z-index: 1;
+  border-radius: 35px;
+  background-color: transparent;
+  border:1px solid #30BCED;
+  letter-spacing: 1px;
+  text-decoration: none;
+  margin: 10px 5px 20px 5px;
+  cursor: pointer;
+  transition: all 250ms ease-in;
+  color:#303036;
+  user-select: none;
+  
+  &:focus {
+    outline: none !important;
+  }
+  
+  &:hover{
+    // font-weight: bold;
+    background-color: #30BCED;
+    color:#FFFAFF;
+  }
+}

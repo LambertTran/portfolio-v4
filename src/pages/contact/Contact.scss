@@ -1,0 +1,30 @@
+.contact {
+  min-height: 50vh;
+  padding:23px;
+  background-color: #eee;
+
+  h1 {
+    text-align: center;
+  }
+
+  h3 {
+    text-align: center;
+  }
+
+  .social-icon{
+    text-align: center;
+    height: 70px;
+    max-height: 100px;
+    a{
+      text-decoration: none;
+      i{
+        margin: 0 10px 0 10px;
+        font-size: 50px;
+        transition: all 250ms ease;
+        &:hover{
+          color: #30BCED;
+        }
+      }
+    }
+  }
+}

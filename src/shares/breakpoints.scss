@@ -1,3 +1,9 @@
+@mixin for-phone-portrait {
+  @media only screen and (min-width:600px) {
+    @content;
+  }
+}
+
 @mixin for-tablet-to-desktop {
   @media only screen and (min-width:767px) {
     @content;
@@ -5,7 +11,7 @@
 }
 
 @mixin for-desktop-up {
-  @media only screen and (min-width:1200px) {
+  @media only screen and (min-width:1023px) {
     @content;
   }
 }

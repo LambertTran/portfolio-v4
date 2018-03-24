@@ -14,14 +14,17 @@ export default class Navbar extends React.Component {
     this.state = { 
       bgColor: 'transparent',
       isBoxShadow: false,
+      isMobile: window.innerWidth<600 ? true : false,
     };
 
     this.handleBgChange = this.handleBgChange.bind(this);
+    this.handleWidthChange = this.handleWidthChange.bind(this);
   }
 
   componentDidMount() {
     this.handleBgChange();
     this.handScroll();
+    this.handleWidthChange();
   }
   
   handScroll() {
@@ -30,7 +33,6 @@ export default class Navbar extends React.Component {
       el.addEventListener('click', function() {
         const gotoEl = this.getAttribute('name');
         const pos = document.getElementById(gotoEl).getBoundingClientRect().top + window.scrollY - 70;
-        console.log(pos)
         window.scrollTo({
           top:pos,
           left:0,
@@ -58,12 +60,29 @@ export default class Navbar extends React.Component {
     });
   }
 
+  handleWidthChange() {
+    window.addEventListener('resize', () => {
+      if (window.innerWidth < 600) {
+        this.setState({ isMobile: true });
+      } else {
+        this.setState({ isMobile: false });
+      }
+    })
+  }
+
   render() {
     const { bgColor } = this.state;
-    let border; 
+    let border = '';
+    let hide = ''; 
+    
     if (this.state.isBoxShadow) {
       border = "boxShadow";
+    }
+
+    if (this.state.isMobile) {
+      hide = "hide";
     } 
+
     return (
       <nav className={`navbar ${border}`} style={{ backgroundColor: bgColor }} >
         <a href="/">
@@ -71,16 +90,20 @@ export default class Navbar extends React.Component {
         </a>
         <ul id="navbar">
           <li id='navbar-click' name="tech-page">
-            <i className="fa fa-wrench" aria-hidden="true"></i>
-            <span>Techs</span>
+            <i className={`fa fa-wrench`} aria-hidden="true"></i>
+            <span className={`${hide}`}>Skills</span>
+          </li>
+          <li id='navbar-click' name="work-page">
+          <i className={`fa fa-handshake`} aria-hidden="true"></i>
+            <span className={`${hide}`}>Works</span>
           </li>
           <li id='navbar-click' name="project-page">
-            <i className="fa fa-folder-o" aria-hidden="true"></i>
-            <span>Projects</span>
+            <i className={`fa fa-folder-open`}></i>
+            <span className={`${hide}`}>Projects</span>
           </li>
           <li id='navbar-click' name="contact-page">
-            <i className="fa fa-phone" aria-hidden="true"></i>
-            <span>Contact</span>
+            <i className={`fa fa-phone`} aria-hidden="true"></i>
+            <span className={`${hide}`}>Contact</span>
           </li>
         </ul>
       </nav>

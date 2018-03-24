@@ -1,0 +1,27 @@
+@import '../../shares/breakpoints.scss';
+
+.page{
+  min-height: 50vh;
+  width: 100%;
+}
+
+.project-container{
+  padding: 50px 23px 100px 23px;
+}
+
+.project-list{
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+  max-width: 1350px;
+  @include for-tablet-to-desktop{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width:1366px){
+    padding: 20px;
+  }
+}

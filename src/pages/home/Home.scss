@@ -1,0 +1,101 @@
+@import '../../shares/breakpoints.scss';
+
+.homepage {
+  background-color: #312A29;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    color: white;
+    width: 80%;
+    text-align: center;
+
+    @include for-tablet-to-desktop {
+      width: 60%;
+      font-size: 2.3em;
+    }
+    
+    @include for-desktop-up {
+      font-size: 2.5em;
+    }
+  }
+
+  h3{
+    color: #9E9E9E;
+    width: 80%;
+    text-align: center;
+    
+    @include for-tablet-to-desktop {
+      width: 60%;
+      font-size: 1.4em;
+    }
+    
+    @include for-desktop-up {
+      font-size: 1.6em;
+    }
+  }
+  
+  .linkBtn {
+    color: #eee;
+    font-size: 1.1em;
+    padding: 10px 15px;
+    margin-top: 40px;
+
+    &:hover {
+      color:white;
+      padding: 10px 25px;
+    }
+
+    @include for-tablet-to-desktop {
+      font-size: 1.3em;
+      padding: 13px 25px;
+
+      &:hover {
+        padding: 13px 35px;
+      }
+    }
+    
+    @include for-desktop-up {
+      font-size: 1.5em;
+    }
+  }
+
+  .nextPage{
+    margin: 100px 0 0 0;
+    color: white;
+    transition: all 0.5s ease-in;
+    z-index: 10;
+    opacity: 0.5;
+    cursor: pointer;
+    
+    &:hover {
+      opacity: 1;
+    }
+    
+    h4 {
+      margin: 0 0;
+    }
+
+    i {
+      font-size: 2.3em;
+      text-align: center;
+      width: 100%;
+    }
+  }
+
+  .background{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-image: url('../../imgs/coffee-keyboard.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.1;
+  }
+
+}

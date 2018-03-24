@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+@import 'breakpoints.scss';
+
+// main font
+$text-font: 'Source Sans Pro', sans-serif;
+
+body {
+  // font-family: $text-font;
+  h1 {
+    font-size: 1.6em;
+    font-weight: 700;
+    
+    @include for-tablet-to-desktop {
+      font-size: 2.0em;
+    }
+
+    @include for-desktop-up {
+      font-size: 2.3em;
+    }
+  }
+}
+
+.wrapper{
+  // max-width: 1600px;
+}

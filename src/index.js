@@ -3,12 +3,18 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 /** Components */
-import Navbar from './containers/navbar/Navbar';
-import Home from './containers/home/Home';
+import Navbar from './pages/navbar/Navbar';
+import Home from './pages/home/Home';
+import Techs from './pages/techs/Techs';
+import Works from './pages/works/Works';
+import Projects from './pages/projects/Projects';
+import Contact from './pages/contact/Contact';
 
 
 /** Styles */
-import './Loader.scss';
+import './shares/Loader.scss';
+import './shares/wrapper.scss';
+
 
 /** Class */
 class Wrapper extends React.Component {
@@ -44,9 +50,13 @@ class Wrapper extends React.Component {
     }
     
     return (
-      <div>
+      <div className="wrapper">
         <Navbar />
         <Home />
+        <Techs />
+        <Works />
+        <Projects />
+        <Contact />
       </div>
     )
   }

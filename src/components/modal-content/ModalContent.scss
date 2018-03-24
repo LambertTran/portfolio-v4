@@ -1,0 +1,55 @@
+.modal-content{
+  min-height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #FFFAFF;
+
+  img{
+    min-height: 250px;
+    width: 100%;
+  }
+
+  @media screen and (min-width:1023px){
+    flex-direction: row;
+    img{
+      width: 700px;
+    }
+  }
+
+  .detail{
+    flex-basis: 400px;
+    // overflow-y: scroll;
+    padding: 25px 25px 60px 25px;
+    p{
+      font-size: 1.2em;
+      margin: 30px 10px 40px 10px;
+      @media screen and (min-width:1023px){
+        margin: 20px 0px 40px 0px;
+      }
+    }
+    ul{
+      margin: 10px 0 20px 0px ;
+    }
+  }
+  
+  .header{
+    font-size: 1.3em;
+    font-weight: 500;
+    color: #703dc1;
+    span{
+      color: black;
+      font-size: 0.9em;
+    }
+  }
+  
+  .header-margin{
+    margin:0;
+    line-height: 1.1;
+  }
+  
+  .title{
+    text-align: center;  
+    font-size: 1.6em;
+  }
+}
