@@ -91,10 +91,14 @@
   &:focus{
     outline:none !important;
   }
-  
+
   @include for-tablet-to-desktop{
     width:600px !important;
     height:800px !important;
+  }
+
+  @include for-iphoneX-portrait {
+    height: 80% !important;
   }
 
   @include for-desktop-up{

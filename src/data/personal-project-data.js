@@ -1,3 +1,4 @@
+import portfolioV3 from '../imgs/portfolioV3.png';
 import auto27 from '../imgs/auto27.png';
 import todoApp from '../imgs/todoApp.png';
 import wiki from '../imgs/wikiSearch.png';
@@ -6,6 +7,19 @@ import markdown from '../imgs/markdown.png';
 
 
 const projects = {};
+projects.portfolioV3 = {
+  name: 'Portfolio Version 3',
+  image: portfolioV3,
+  detail: 'This is version 3 of my portfolio. The current one is version 4, which I just redesign recently',
+  techs: ['ReactJs','Sass'],
+  github: [
+    { sourceCode: 'https://github.com/LambertTran/portfolio-v3' },
+  ],
+  web: [
+    { webSite: 'https://lamberttran.github.io/portfolio-v3/' },
+  ],
+};
+
 projects.auto27 = {
   name: 'Auto27',
   image: auto27,

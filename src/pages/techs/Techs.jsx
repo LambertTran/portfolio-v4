@@ -6,7 +6,7 @@ export default function Techs() {
   return (
     <div id="tech-page" className="tech-page">
       <div className="tech-content"> 
-        <h1>My Skills</h1>
+        <h1>My tech stack</h1>
         <div className="tech-list">
           <i className="devicon-javascript-plain colored"></i>
           <i className="devicon-react-original-wordmark"></i>

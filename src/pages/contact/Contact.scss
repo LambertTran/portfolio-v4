@@ -1,5 +1,7 @@
+@import '../../shares/breakpoints.scss';
+
 .contact {
-  min-height: 50vh;
+  min-height: 25vh;
   padding:23px;
   background-color: #eee;
 
@@ -12,17 +14,48 @@
   }
 
   .social-icon{
-    text-align: center;
-    height: 70px;
-    max-height: 100px;
-    a{
-      text-decoration: none;
-      i{
-        margin: 0 10px 0 10px;
-        font-size: 50px;
-        transition: all 250ms ease;
-        &:hover{
-          color: #30BCED;
+    margin: 40px 0;
+
+    .social-item {
+      display: flex;
+      justify-content: flex-start;  
+      margin-left: 40px;
+
+      @include for-phone-portrait {
+        margin-left: 150px;
+      }
+
+      @include for-tablet-to-desktop {
+        margin-left: 200px;
+      }
+
+      @include for-desktop-up {
+        margin-left: 300px;
+      }
+
+      a{
+        text-decoration: none;
+        display: inline;      
+        
+        img {
+          width: 50px;
+          height: 50px;  
+          border-radius: 50%;
+          border: 2px solid white;
+          transition: all 0.3s ease-in;
+
+          &:hover {
+            border: 2px solid #703dc1;
+          }
+        }
+
+        h4 {
+          color: black;
+          margin-left: 20px;
+
+          &:hover {
+            text-decoration: underline;
+          }
         }
       }
     }

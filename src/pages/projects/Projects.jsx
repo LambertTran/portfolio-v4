@@ -15,6 +15,7 @@ export default function Projects() {
     <div id="project-page" className="project-page">
       <h1>Personal projects</h1>
       <ProjectPage> 
+        <ProjectItem data={projects.portfolioV3} />
         <ProjectItem data={projects.auto27} />
         <ProjectItem data={projects.todoApp} />
         <ProjectItem data={projects.markdown} />
