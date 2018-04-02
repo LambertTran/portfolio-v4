@@ -19,7 +19,7 @@
     .social-item {
       display: flex;
       justify-content: flex-start;  
-      margin-left: 40px;
+      margin-left: 30px;
 
       @include for-phone-portrait {
         margin-left: 150px;
@@ -31,6 +31,10 @@
 
       @include for-desktop-up {
         margin-left: 300px;
+      }
+
+      @media screen and (min-width:1400px) {
+        margin-left: 40%;
       }
 
       a{

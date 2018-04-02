@@ -12,7 +12,7 @@ workData.UCDhyperloop = {
     { sourceCode: 'https://github.com/LambertTran/UCD-hyperloop' },
   ],
   web: [
-    { frontEnd: 'https://ucd-hyperloop.herokuapp.com/' },
+    { frontEnd: 'http://www.davishyperloop.com/' },
     { backEnd: 'https://ucd-hyperloop.herokuapp.com/login' },
   ],
 };

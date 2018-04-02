@@ -2,7 +2,7 @@
   "name": "portfolio-v4",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://lamberttran.github.io/portfolio-v4/",
+  "homepage" : "http://lamberttran.github.io/portfolio-v4",
   "dependencies": {
     "animate.css": "^3.6.1",
     "autoprefixer": "7.1.6",
