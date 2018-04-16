@@ -19,7 +19,7 @@
     .social-item {
       display: flex;
       justify-content: flex-start;  
-      margin-left: 30px;
+      margin-left: 20px;
 
       @include for-phone-portrait {
         margin-left: 150px;
