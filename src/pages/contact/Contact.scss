@@ -19,18 +19,22 @@
     .social-item {
       display: flex;
       justify-content: flex-start;  
-      margin-left: 20px;
+      margin-left: 10px;
 
       @include for-phone-portrait {
         margin-left: 150px;
       }
 
       @include for-tablet-to-desktop {
-        margin-left: 200px;
+        margin-left: 35%;
       }
 
       @include for-desktop-up {
-        margin-left: 300px;
+        margin-left: 350px;
+      }
+
+      @media screen and (min-width:1025px) {
+        margin-left: 38%;
       }
 
       @media screen and (min-width:1400px) {
